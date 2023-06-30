@@ -69,5 +69,8 @@ class ProcessUserJob implements ShouldQueue
             'name' => $this->item['credit_card']['name'],
             'expiration_date' => $this->item['credit_card']['expirationDate'],
         ]);
+
+        $age = $dateOfBirth ? $dateOfBirth->diffInYears(Carbon::now()) : 'N/A';
+        Storage::append('/logs/users.log', $user->name . ', ' . 'Age: ' . $age);
     }
 }
