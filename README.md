@@ -31,7 +31,7 @@ Alright, I've re-added that step:
 Once you've set up the application, you can run the command to process the JSON file. Use the `import:users` command with the path to your JSON file as an argument:
 
 ```bash
-php artisan import:users path-to-your-json-file.json
+php artisan import:users challenge.json
 ```
 
 The command will parse the JSON file, create users and their associated credit cards, and log user names and ages to a file in the storage/logs directory. Note that users younger than 18 or older than 65 will not be imported.
