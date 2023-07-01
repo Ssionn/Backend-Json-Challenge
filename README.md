@@ -1,5 +1,3 @@
-Alright, I've re-added that step:
-
 ## Installation:
 
 1. Clone the repository to your local machine.
