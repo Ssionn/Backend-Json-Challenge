@@ -1,3 +1,4 @@
 *
 !public/
 !.gitignore
+!challenge.json
