@@ -3,13 +3,13 @@
 1. Clone the repository to your local machine.
 
     ```bash
-    git clone https://github.com/your-repository-name.git
+    git clone https://github.com/Ssionn/Backend-Json-Challenge.git
     ```
 
 2. Change directory into the cloned repository.
 
     ```bash
-    cd your-repository-name
+    cd Backend-Json-Challenge
     ```
 
 3. Install dependencies with Composer.
