@@ -48,4 +48,9 @@ class User extends Authenticatable
         'password' => 'hashed',
         'date_of_birth' => 'date',
     ];
+
+    public function creditCards()
+    {
+        return $this->hasMany(CreditCard::class);
+    }
 }

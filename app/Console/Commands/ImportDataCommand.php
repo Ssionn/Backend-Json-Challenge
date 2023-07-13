@@ -31,10 +31,9 @@ class ImportDataCommand extends Command
         $json = Storage::get($file);
         $data = json_decode($json, true);
 
-        if (! is_array($data)) {
+        if (!is_array($data)) {
             $this->error('Invalid data. Please ensure the file contains a JSON array.');
-
-            return 1;
+            return;
         }
 
         $bar = $this->output->createProgressBar(count($data));
